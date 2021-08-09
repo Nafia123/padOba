@@ -1,0 +1,12 @@
+//Maak prepared stmnt
+$stmt = $conn->prepare("INSERT INTO bundel 
+(titel, onderwerp, afbeelding, mcVraag, mcAntwoord1, mcAntwoord2, mcAntwoord3, mcAntwoord4, mcAntwoordJuist, memoryObj1, memoryObj2, memoryObj3, memoryObj4, memoryObj5, memoryObj6, memoryObj7, memoryObj8, memoryObj9, memoryObj10, memoryObj11, memoryObj12, openvraagVraag, openvraagAntwoord, sleepvraagVraag1, sleepvraagVraag2, sleepvraagVraag3, sleepvraagVraag4, sleepvraagVraag5, sleepvraagVraag6, sleepvraagVraag7, sleepvraagVraag8, sleepvraagAntwoord1, sleepvraagAntwoord2, sleepvraagAntwoord3, sleepvraagAntwoord4, sleepvraagAntwoord5, sleepvraagAntwoord6, sleepvraagAntwoord7, sleepvraagAntwoord8, tekst, video)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+
+//Bind param met waardes uit Array uit array argument '$variabelenArray'
+$stmt->bind_param('sssssssssssssssssssssssssssssssssssssssss', $variabelenArray[0], $variabelenArray[1], $variabelenArray[2], $variabelenArray[3], $variabelenArray[4], $variabelenArray[5], $variabelenArray[6], $variabelenArray[7], $variabelenArray[8], $variabelenArray[9], $variabelenArray[10], $variabelenArray[11], $variabelenArray[12], $variabelenArray[13], $variabelenArray[14], $variabelenArray[15], $variabelenArray[16], $variabelenArray[17], $variabelenArray[18], $variabelenArray[19], $variabelenArray[20], $variabelenArray[21], $variabelenArray[22], $variabelenArray[23], $variabelenArray[24], $variabelenArray[25], $variabelenArray[26], $variabelenArray[27], $variabelenArray[28], $variabelenArray[29], $variabelenArray[30], $variabelenArray[31], $variabelenArray[32], $variabelenArray[33], $variabelenArray[34], $variabelenArray[35], $variabelenArray[36], $variabelenArray[37], $variabelenArray[38], $variabelenArray[39], $variabelenArray[40]);
+$stmt->execute();
+
+//sluit db
+$stmt->close();
+$conn->close();

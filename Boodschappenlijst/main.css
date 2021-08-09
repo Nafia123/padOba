@@ -1,0 +1,23 @@
+body {
+	background:lightblue;
+	font-family: arial;
+}
+
+h1, h3 {
+	color: grey;
+}
+
+a {
+	color: blue;
+}
+
+li { 
+	padding:0px 0px 10px 5px;
+}
+
+.lijst2 {
+	background: grey;
+	color: blue;
+}
+
+

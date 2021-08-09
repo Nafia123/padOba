@@ -1,0 +1,212 @@
+Dit is voor de beoordelaars van project PAD
+
+De query om onze database te creeeren.
+Hoeft alleen ge-copy-paste te worden in MySQL, en vervolgens gerund te worden.
+
+
+
+
+Query =
+
+
+
+
+CREATE DATABASE  IF NOT EXISTS `oba2` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `oba2`;
+-- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
+--
+-- Host: localhost    Database: oba2
+-- ------------------------------------------------------
+-- Server version 5.7.20-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `bundel`
+--
+
+DROP TABLE IF EXISTS `bundel`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `bundel` (
+  `bundelID` int(11) NOT NULL AUTO_INCREMENT,
+  `titel` varchar(255) NOT NULL,
+  `inleiding` longtext,
+  `afbeelding` longtext,
+  `afbeeldingWidth` smallint(6) DEFAULT NULL,
+  `afbeeldingHeight` smallint(6) DEFAULT NULL,
+  `mcVraag` longtext,
+  `mcAntwoord1` varchar(255) DEFAULT NULL,
+  `mcAntwoord2` varchar(255) DEFAULT NULL,
+  `mcAntwoord3` varchar(255) DEFAULT NULL,
+  `mcAntwoord4` varchar(255) DEFAULT NULL,
+  `mcAntwoordJuist` varchar(45) DEFAULT NULL,
+  `openvraagVraag` longtext,
+  `openvraagAntwoord` longtext,
+  `openvraagSoort` tinyint(4) DEFAULT NULL,
+  `sleepvraagVraag1` longtext,
+  `sleepvraagAntwoord1` longtext,
+  `sleepvraagVraag2` longtext,
+  `sleepvraagAntwoord2` longtext,
+  `sleepvraagVraag3` longtext,
+  `sleepvraagAntwoord3` longtext,
+  `sleepvraagVraag4` longtext,
+  `sleepvraagAntwoord4` longtext,
+  `sleepvraagVraag5` longtext,
+  `sleepvraagAntwoord5` longtext,
+  `sleepvraagVraag6` longtext,
+  `sleepvraagAntwoord6` longtext,
+  `sleepvraagVraag7` longtext,
+  `sleepvraagAntwoord7` longtext,
+  `sleepvraagVraag8` longtext,
+  `sleepvraagAntwoord8` longtext,
+  `tekst` longtext,
+  `video` longtext,
+  `videoSize` int(11) DEFAULT NULL,
+  PRIMARY KEY (`bundelID`)
+) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `bundel`
+--
+
+LOCK TABLES `bundel` WRITE;
+/*!40000 ALTER TABLE `bundel` DISABLE KEYS */;
+INSERT INTO `bundel` VALUES (41,'Apen','Inleiding test weetikveel dus ik lul maar wat dit is om de inleiding te testen inleiding test weetikveel dus ik lul maar wat dit is om de inleiding te testen inleiding test weetikveel dus ik lul maar wat dit is om de inleiding te testen inleiding test weetikveel dus ik lul maar wat dit is om de inleiding te testen inleiding test weetikveel dus ik lul maar wat dit is om de inleiding te testen','http://home.deds.nl/~sbdwebmaster/bavianen.jpg',NULL,NULL,'Welke van de onderstaande soorten is GEEN aap?','Kakatoe','Baviaan','Gorilla','Chimpansee','A','Welke aap slingerde om het Empire State Building in New York?','King Kong',0,'1','1','2','2','3','3','4','4','5','5','6','6','7','7','8','8','De apen (Simiiformes, ook wel Simiae of Anthropoidea) zijn een infraorde uit de orde der primaten (Primates). Alle primaten die niet tot de infraorde van de apen behoren worden halfapen genoemd. Een groep halfapen, de spookdiertjes, wordt beschouwd als de nauwste verwant van de apen en samen worden ze geplaatst in de onderorde Haplorhini.<br><br>\n\nDe apen zijn verdeeld in twee groepen (\"parvordes\"), de breedneusapen (Platyrrhini) uit Midden- en Zuid-Amerika en de smalneusapen (Catarrhini) uit Afrika en Azië. Deze parvordes worden soms als aparte infraordes gezien. Tot de smalneusapen behoren ook de mensapen en de mensen. In verscheidene talen wordt een onderscheid gemaakt tussen apen en mensapen (bijvoorbeeld het Engels: monkey (aap) en ape (mensaap)). Het Nederlands maakt dit onderscheid niet en met het woord aap worden ook mensapen aangeduid.<br><br>\n\nApen leven voornamelijk in warmere streken, die veelal begroeid zijn met bomen. In de tropische regenwouden komen de meeste soorten voor. De meeste apen zijn dan ook goede klimmers, die een groot gedeelte van de dag in bomen doorbrengen. Slechts enkele soorten wagen zich op de open vlakte (bijvoorbeeld de huzaaraap) of in rotsachtige streken (verscheidene bavianen en makaken) of leven in koudere streken (bijvoorbeeld de Japanse makaak die in Japan tot boven de sneeuwgrens kan worden aangetroffen, of de stompneusapen uit de Himalaya). De gelada, een aan de bavianen verwante apensoort, leeft op de hogergelegen grasvlakten van het Ethiopisch Hoogland. Apen zijn over het algemene herbivoor, die voornamelijk van vruchten, noten, bladeren, stengels en boomsappen leven. Sommige soorten eten ook dierlijk materiaal, als insecten en vogeleieren. Vooral kleinere apensoorten als de klauwaapjes leven voor een groot gedeelte van insecten. De meeste apen zijn groepsdieren, die leven in grote troepen. Solitaire soorten, als de orang-oetans, zijn ver in de minderheid.<br><br>\n\nApen zijn over het algemeen middelgrote boombewonende dieren. Bij veel soorten is de staart langer dan de rest van het lichaam. Bij enkele apen van de Nieuwe Wereld heeft deze staart zich ontwikkeld tot een grijpstaart. Bij mensapen ontbreekt de staart geheel. De benen zijn langer dan de armen, maar niet bij gibbons. Apen hebben relatief grote hersenen en een grote, bolvormige hersenkas, waarmee ze zich onderscheiden van de halfapen. Veel soorten worden als vrij intelligent beschouwd: ze zijn vindingrijk, speels en passen zich gemakkelijk aan veranderende omstandigheden aan. Ook zijn apen meer op hun zicht aangewezen dan de halfapen, die een beter ontwikkeld gehoor en reukzin hebben. De ogen staan recht naar voren gericht.<br><br>\n\nDe kleinste apensoort is het dwergzijdeaapje (Cebuella pygmaea), de grootste de oostelijke gorilla (Gorilla beringei).','<iframe width=\"854\" height=\"480\" src=\"https://www.youtube.com/embed/QtXby3twMmI\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>',NULL),(42,'Stemmen!','Dit artikel gaat over stemmen!','https://www.65plus.nl/facilitair/files/news_view/4175/stemmen-voor-de-gemeenteraadsverkiezingen-raadpleeg-de-stemwijzers.jpg',NULL,NULL,'Vanaf welke leeftijd mag je stemmen?','16','17','18','19','C','Weet je waar je ouders op stemmen?','Veel mensen houden dit voor zichzelf, maar leuk als je dit wel krijg te horen!',1,'CDA','S. Buma','PvdA','L. Asscher','SP','E. Roemer','VVD','M. Rutte','PVV','G. Wilders','GroenLinks','J. Klaver','D66','A. Pechtold','ChristenUnie','G. Segers','Een verkiezing is een methode waarbij een aantal personen, de kiesgerechtigden, door middel van een stemming bepaalt aan wie een bepaalde functie, post of titel moet worden toegekend.<br><br>Door middel van verkiezingen wordt bijvoorbeeld uitgemaakt wie of wat \"de beste\" is, bijvoorbeeld bij het Eurovisiesongfestival of bij de Miss Worldverkiezingen.<br><br>In democratische landen worden de vertegenwoordigers (van het volk) die de wetgevende organen uitmaken, en soms van uitvoerende organen, door middel van verkiezingen aangeduid.','<iframe width=\"854\" height=\"480\" src=\"https://www.youtube.com/embed/SfkP9qR1pTE\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>',NULL),(43,'Boeken','Boeken zijn leuk om te lezen!','http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/2v/dp/p02vdpfn.jpg',NULL,NULL,'Wat is het eerste boek dat ooit gepubliceerd werd?','\'The Gutenberg Bible\', door Johannes Gutenberg','\'Harry Potter\', door J.K. Rowling','\'Donald Duck\', door Walt Disney','\'Oxford English Dictionary\', door Oxford University Press','A','Wat is jou favoriete genre om te lezen?','Dat is ook mijn favoriet!',1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Ga meer lezen!<br><br>Veel mensen lezen te weinig. Dit vergroot de kans op een taalachterstand.<br>Lezen helpt heel erg bij het verbreden van je woordenschat, en het is ook heel leuk!<br><br>Lezen dus!','<iframe width=\"854\" height=\"480\" src=\"https://www.youtube.com/embed/Hf_kw_WyttA\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>',NULL);
+/*!40000 ALTER TABLE `bundel` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `gebruiker`
+--
+
+DROP TABLE IF EXISTS `gebruiker`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `gebruiker` (
+  `pasNr` int(11) NOT NULL AUTO_INCREMENT,
+  `voornaam` varchar(45) NOT NULL,
+  `achternaam` varchar(100) NOT NULL,
+  `admin` tinyint(4) NOT NULL,
+  `thema` int(11) NOT NULL DEFAULT '0',
+  `wachtwoord` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`pasNr`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `gebruiker`
+--
+
+LOCK TABLES `gebruiker` WRITE;
+/*!40000 ALTER TABLE `gebruiker` DISABLE KEYS */;
+INSERT INTO `gebruiker` VALUES (1,'Simon','Voogel',1,7,'admin1'),(2,'Naw','Singh',1,9,'admin2'),(3,'Justin','Nguyen',0,1,NULL),(4,'Mark','Schoon',0,6,NULL),(11,'test','test',1,4,'admin11'),(12,'test','test',1,5,'admin12'),(13,'test','test',1,6,'admin13'),(14,'test','test',1,9,'admin14'),(15,'test','test',1,8,'admin15'),(16,'test','test',1,9,'admin16');
+/*!40000 ALTER TABLE `gebruiker` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `memorygame`
+--
+
+DROP TABLE IF EXISTS `memorygame`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `memorygame` (
+  `memoryGameId` int(11) NOT NULL AUTO_INCREMENT,
+  `titel` varchar(255) NOT NULL,
+  `onderwerp` varchar(255) NOT NULL,
+  `memoryObj1` longtext,
+  `memoryObj2` longtext,
+  `memoryObj3` longtext,
+  `memoryObj4` longtext,
+  `memoryObj5` longtext,
+  `memoryObj6` longtext,
+  `memoryObj7` longtext,
+  `memoryObj8` longtext,
+  `memoryObj9` longtext,
+  `memoryObj10` longtext,
+  `memoryObj11` longtext,
+  `memoryObj12` longtext,
+  PRIMARY KEY (`memoryGameId`),
+  KEY `onderwerp_idx` (`onderwerp`),
+  CONSTRAINT `onderwerpo` FOREIGN KEY (`onderwerp`) REFERENCES `onderwerp` (`onderwerp`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `memorygame`
+--
+
+LOCK TABLES `memorygame` WRITE;
+/*!40000 ALTER TABLE `memorygame` DISABLE KEYS */;
+INSERT INTO `memorygame` VALUES (10,'Cijfers','Rekenen','https://i.redd.it/ha1xl0cp8bfy.jpg','http://www.newportaoit.org/digitalPortfolios/2016/nathan_debeauclair_portfolio/2.jpg','https://www.drodd.com/images15/3-29.jpg','http://salesqualia.com/wp-content/uploads/2016/01/4.jpeg','http://www.printbot.net.au/wp-content/uploads/2015/08/number-5-print-black.jpg','http://www.wilko.com/content/ebiz/wilkinsonplus/invt/0344501/0344501_l.jpg','http://www.wilko.com/content/ebiz/wilkinsonplus/invt/0344548/0344548_l.jpg','http://eightinc.com/wp-content/uploads/eight-logo-big.png','data:image/jpeg;base64,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','data:image/png;base64,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','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAe1BMVEX///8AAAB4eHhOTk5oaGjd3d3CwsL8/Pz19fX5+flHR0d8fHwEBATp6emLi4uPj4/T09Pv7+9TU1MVFRXKyspZWVm4uLhjY2PExMSysrJeXl6FhYWcnJyjo6M/Pz8hISE1NTUQEBArKytCQkJubm7h4eEvLy8fHx+hoaFmJ5WCAAAFi0lEQVR4nO2d63KqShBGHY0CCgJKvCFbEy9nv/8THm66xQDT0DNjxfpW/oWEzwVDz4BV9GAAAAAAAAAAAACACtaLw3XnW7cEy7ypqUQnmkwmkaGwCqmhHU02k0BnSJj8ESknnRmNePtrFr7Ts/dshHjxl8gZ6cloTR+fi2zxoSsj2okbxgWdyfQerkfQTk7Zzt30x7xguD8KoUewrMzefCkeMSp4mVWyNZzB4EM8YU7Q2SyewxUL2ttTPjRfIlgWbV2C6eAM/YP46adX8D6j34u2DsE8JTjXBRg4g9mlH302hKs6g85qVHPuDA3RsmgLtyZfjaC9/64bm2YEvfl/ZXhdvgrB8bBheGgVLFfw0bo9nCmY3jBMmka/AUFnO5WFMwXtJFvRuk2DU6dgOjbzot0azRR8XjUYFWws2nxBp5gXNjv58dMhmI/NvGjrEsxw6lYNZgSz5XRb0VYheJnf/v8FZ7C41ZNc970E07GR12ZZZdYhaJUPeKzVj+W0OsEcQmXWIVjohX+P8jiWoOd/dU1QN0THtKLNECRWZi2C1ka6oGAIFqsGamVWK5iPTbtD0e4jmI3NbEVLK1xKBTO/S+z2DqcJ9hybKgQrz+f0CDpdK7NKQWd7+rejx7mPej7lgvmqoXZ31Iz+gsXzuX5jkyz4lLBcxKtoHExmy6ZdKhTMFkzuw3364dNfBWn4UOUZfNzT1A/C2+/t/PGg3qWa/7ibz31g3zZ4C6phB8Hd1qtuGRoU/FiFD7+3Bg51VqQKjrbhoPqlYjo3EucmtuBuZRdat/DsuzHiJUISXPqX2k2RiTN4Tby71SOJKsH05NlN266kDE6R2U2awp0vRYLF8av/Sph2FPsLjsOWjbEiwbbvu8eaBbMr3WrK3ygTbMb51i3YgmdAcEAq1poELVIRZwqSrgNdz0VJi3Cm4P6VgqQbfKbg9pWCpKPLFCRVMl2CpKPLFAxeKbgyIEiaCCHYkwkEf7kgqcL9ZsG3P4MQhKAcCEKQAQQhKAeCEGQAQQjKgSAEGUAQgnIgCEEGEISgHAhCkAEEISgHghBkAEEIyoEgBBlAEIJyIAhBBhCEoBwIQpABBCEoB4IQZABBCMqBIAQZQBCCciAIQQYQhKAcCEKQAQQhKAeCEGQAQQjKgSAEGUAQgnIgCEEGEISgHAhCkAEEISgHghBk8PaCb//yxrcXfPsh+uaCFu0dv2deCklwqsboByZeYkx6DbUeQYv2nu01L4V0GZya+zmwIHW7+ORlkA7i0VEj9IyJF+3/pWQcGluq8CC1Sjjyhs9cniCE29bYhAGpkeWVJ0hr+lbf84cNqV2gyxo+Fq1dZqBKqYJN6sfCO7rE7k5bVU4VLqRsEXEySNOgEHNVThVI87wQCScjobVY0zPTk4qoK4acjJM8IUfHPGERm5+5bY2jJNA6H6WsVJqV0PpKiazE9RO0srY5xCaAC8ZRbEon9+2c9c6mNQZjHcVmv4ge7sn3Vx8yyvpX0jJGqs9g+E1vDdrnljD7uEP6McxmCmWG+Y46tVXuNVNYHRqNZuwHqq5DyxrYXRrnunmR65oddOtpnoYM1S25o+9OBzf903nHO7Zxp+Epimv1kNRNh93PakC6i6gKiuuqMejHhktCnd+f+Rpuno+kxO95szX2O3ekLznE0b1HqlUb64TeeOt/sPoap8u2OAm8kLi0+fc5ivCytPT+CIv5Ng13qrtPfD+endeL0fG+NurdW/w2q7jH6Wh3HsZzSX1zfH+eh0+r4Z1zH/9veZwu1udZ7Jc3OYc+JlT+tAvaOrNvz6P6jnkSkvsMvYJrCPKRCDo6s2+CtCcfPXnpNbgrQuKhRvz2idA+6wzfq74DqKM9QvMHMOAHAAAAAAAAAAAAAAAAAAAAwK/ifwchZTxeEX/tAAAAAElFTkSuQmCC','data:image/png;base64,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'),(11,'Vissen','Dieren','data:image/png;base64,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','data:image/jpeg;base64,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','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHeeQplxyl48CEh49FFL1E9Pja2YN0xOA-iDTZL07eq2Gnsux6JA','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmaniRr6SNbx8y59AsFGLkEFqi0OGcJVyVhjMcfluc-6ZRyD8AZQ','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGCquoRYPwEvUq5vvc9S9wQu8mNh8OarOWwwqPyCFWD8f8fKpH','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbMW5Bf1zvb-QMbjUuxItUHJBPoJSKczSV9KZkmZHtAGNh_ruV','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt_RtUScdu3kyVclSWFh3PPSAu-tj3tklXj18-wM7zmg_fAHa0uQ','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9b_uLeCXFceQfxHfOJYYWDHT3NtTXaCximSnkjr9hZw8Akk6J','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKKKU4bBL5Xd3txawdt8KNeokaSvQMsbWpOyKYcCFS9istOsqeqw','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN4FqwOJ4yclWRmEnEmCz4RioCvi8WVXwAFwbEVvP0s9HxqTR5','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLp2u0PiDFqMI16jnEacKX7muQiZq3f7lWPAIzSmFWRbtmGUMX9Q','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRESpX0q0rmo2UkkxwOZkdqxeGDpLJ00f5-voUJcWwCcYrj-bas'),(12,'Vlaggen','Aardrijkskunde','https://cdn.pixabay.com/photo/2017/10/31/23/52/spain-2906824_1280.png','https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png','https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png','https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1280px-Flag_of_Germany.svg.png','https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/2000px-Flag_of_Greece.svg.png','https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg','https://upload.wikimedia.org/wikipedia/commons/5/54/Naval_ensign_of_the_Empire_of_Japan.svg','https://cdn.britannica.com/90/7490-004-415899A0.jpg','https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Turkey_Flag_2_per_3.svg/1024px-Turkey_Flag_2_per_3.svg.png','https://upload.wikimedia.org/wikipedia/en/archive/f/f3/20120812153730%21Flag_of_Russia.svg','https://www.worldatlas.com/webimage/flags/countrys/zzzflags/ptlarge.gif','https://www.flaginstitute.org/wp/wp-content/uploads/2012/10/UK-Union-Flag.png');
+/*!40000 ALTER TABLE `memorygame` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `onderwerp`
+--
+
+DROP TABLE IF EXISTS `onderwerp`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `onderwerp` (
+  `onderwerp` varchar(255) NOT NULL,
+  PRIMARY KEY (`onderwerp`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `onderwerp`
+--
+
+LOCK TABLES `onderwerp` WRITE;
+/*!40000 ALTER TABLE `onderwerp` DISABLE KEYS */;
+INSERT INTO `onderwerp` VALUES ('Aardrijkskunde'),('Dieren'),('Economie'),('Lezen'),('Natuur'),('Nederlands'),('Politiek'),('Rekenen');
+/*!40000 ALTER TABLE `onderwerp` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `resultaten`
+--
+
+DROP TABLE IF EXISTS `resultaten`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `resultaten` (
+  `resultaatID` int(11) NOT NULL AUTO_INCREMENT,
+  `datum` date NOT NULL,
+  `uitslag` varchar(255) NOT NULL,
+  PRIMARY KEY (`resultaatID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `resultaten`
+--
+
+LOCK TABLES `resultaten` WRITE;
+/*!40000 ALTER TABLE `resultaten` DISABLE KEYS */;
+/*!40000 ALTER TABLE `resultaten` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-06-07 19:07:39

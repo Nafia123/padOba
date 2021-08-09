@@ -1,0 +1,32 @@
+<form id="imported" name="afbeelding">
+	<p style="font-size: 20px;">Afbeelding</p>
+	<div id="upload">
+		<b>Kies een afbeelding.</b><br/><br/>
+		<input type="file" id="files" name="files[]" onchange="
+			var filename = value.split('\\');
+			var position = (filename.length - 1);
+			document.getElementById('afbfile').innerHTML = filename[position];
+			previewafb();
+		"/>
+		<textarea id="afbfile" name="afbeelding1" hidden></textarea><br/><br/>
+	</div>
+	
+	<div id="embed" hidden>
+		<b>Kopieer het webadres van de afbeelding in het onderstaande veld.</b><br/><br/><br>
+		<textarea id="afburl" type="text" name="afbeelding2" rows="1" cols="55" onblur="previewafb();"></textarea>
+	</div>
+
+	<br><h3><b>of</b></h3>
+	
+	<p><b>Ik wil een plaatje van het internet hebben<b></p>
+	<input id="afbcheck" type="checkbox" onclick="
+		var check = document.getElementById('afbcheck').checked;
+		
+		document.getElementById('upload').hidden = check;
+		document.getElementById('embed').hidden = !check;
+		
+		document.getElementById('blokPREVIEW').innerHTML = null;
+	" style="transform:scale(1.5);" />
+</form>
+
+<div id="blokPREVIEW"></div>

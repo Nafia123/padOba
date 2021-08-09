@@ -1,0 +1,126 @@
+body {
+	background-image: url(Images/boekenkast.jpeg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #cccccc;
+}
+
+/*header {
+  background-color: white;
+  position:absolute;
+  height:200px;
+  left:300px;
+  width:800px;
+}*/
+/*select{
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid red;;
+    border-radius: 4px;
+}
+*/
+textarea{
+    border: 2px solid red;
+    border-radius: 2px;
+    outline:none;
+}
+
+.inputBorderRood[type=text]{
+  border: 2px solid red;
+  border-radius: 2px;
+  outline:none;
+}
+
+.invoerveldInlog {
+  color: black;
+  text-shadow: 3px 3px 6px #FFFFFF;
+  font-weight: bold;
+  font-family: Georgia;
+  position: absolute;
+  left: 720px;
+  top: 450px;
+}
+
+.OBAlogo {
+	position: absolute;
+  left: -40px;
+  top: -40px;
+}
+
+.midden {
+  position: absolute;
+  left: 580px;
+  top: 100px;
+}
+
+.opslaan{
+  position: absolute;
+  left: 100px;
+  top: 20px;
+}
+
+.rechtsboven {
+  position: absolute;
+  left: 1300px;
+  top: 50px;
+}
+
+
+/*//buttons */
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #FF352F;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#content {
+	margin:auto;
+	text-align:center;
+	padding:10px;
+	background-color:rgba(255, 255, 255, 0.7);
+	border:3px outset;
+	border-radius:5px;
+	display:block;
+}
+
+#knop {
+	background-image: url(Images/addKnop.jpg);
+	width:100px;
+	height:100px;
+	border-radius:5px;
+	padding-top:73px;
+}

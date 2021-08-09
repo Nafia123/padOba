@@ -1,0 +1,64 @@
+body {
+	background-image: url(Images/boekenkast.jpeg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #cccccc;
+
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+.hoofdmenu{
+  position: absolute;
+  left: 1250px;
+  top: 10px;
+}
+
+.opdrachten{
+  position: absolute;
+  left: 1250px;
+  top: 50px;
+}
+
+/*//buttons */
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #FF352F;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

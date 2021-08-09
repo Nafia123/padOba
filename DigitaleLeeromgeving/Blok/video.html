@@ -1,0 +1,14 @@
+<form id="imported" name="video">
+	<p style="font-size: 20px;">Video</p><br>
+	Kopieer hier het webadres* van een Youtube-video:<br><br>
+	<textarea id="video" type="text"  name="video" rows="1" cols="55" onblur="previewvid();" required></textarea><br><br><br>
+
+	Hoe groot moet de video in de opdracht verschijnen?<br><br>
+	<input type="radio" class="vidsize" name="vidsize" value="560" onchange="videosize(this.value);" checked> Klein &nbsp;
+	<input type="radio" class="vidsize" name="vidsize" value="880" onchange="videosize(this.value);"> Middel &nbsp;
+	<input type="radio" class="vidsize" name="vidsize" value="1280" onchange="videosize(this.value);"> Groot
+
+	<br><br><br><br>*Voorbeeld van een youtube-webadres: <br><i>"https://www.youtube.com/watch?v=4NBf0NtVa1Q"</i>
+</form>
+
+<div id="blokTHUMB"></div>
